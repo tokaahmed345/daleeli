@@ -3,6 +3,7 @@ import 'package:daleeli/core/utils/networking/api_service.dart';
 import 'package:daleeli/core/utils/networking/dio_consumer.dart';
 import 'package:daleeli/core/utils/networking/firebase/firestore/firebase_firestore_service.dart';
 import 'package:daleeli/core/utils/networking/firebase/firestore/firestore_service.dart';
+import 'package:daleeli/feature/auth/presentation/screens/register/cubit/register_cubit.dart';
 import 'package:dio/dio.dart';
 
 
@@ -24,6 +25,12 @@ Future<void> setupServiceLocator() async {
    getIt.registerLazySingleton<FirestoreService>(
     () => FirebaseFirestoreService(
       firestore: getIt(),
+    ),
+  );
+  
+   getIt.registerLazySingleton<RegisterCubit>(
+    () => RegisterCubit(
+       getIt(),
     ),
   );
 }
