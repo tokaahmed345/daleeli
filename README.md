@@ -65,29 +65,26 @@
   </div>
 
   <!-- عنصر Honest Truth -->
-  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
-    <span class="icon">✨</span><span class="label"><strong>Honest Truth</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/honest_truth.png</span>
+  <div class="screen-slot" >
+    < <img width="1080" height="1920" alt="screenshot-rocks (21)" src="https://github.com/user-attachments/assets/72b20728-1079-4160-a3a8-a009632956c3" />
+</span>
   </div>
 
   <!-- عنصر My Trips -->
-  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
-    <span class="icon">🧳</span><span class="label"><strong>My Trips</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/trips.png</span>
+  <div class="screen-slot">
+ <img width="1080" height="1920" alt="screenshot-rocks (22)" src="https://github.com/user-attachments/assets/a4616db4-36c8-4192-9c3d-e880f9b52120" />
+</span>
   </div>
 
   <!-- عنصر Profile -->
-  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
-    <span class="icon">👤</span><span class="label"><strong>Profile</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/profile.png</span>
+  <div class="screen-slot" >
+ <img width="1080" height="1920" alt="screenshot-rocks (23)" src="https://github.com/user-attachments/assets/7af735df-01cb-4f71-a44d-fc8f9fe20adc" />
+</span>
   </div>
 
 </div>
 
-<p style="font-size:13px; margin-top:15px;">
-  Example of how to swap a placeholder for a real image once you have it:<br>
-  <code>&lt;img src="screenshots/explore.png" alt="Explore screen" style="width:100%; border-radius:14px;"&gt;</code>
-</p>
+
 
   <h2>✨ Features</h2>
 
