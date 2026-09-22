@@ -27,60 +27,53 @@
   </p>
 
 <h2>📸 Screenshots</h2>
-<p>Here are some screenshots from the app:</p>
 
-<table style="width: 100%; border-collapse: separate; border-spacing: 15px;">
-  <tr>
-    <!-- الصورة الأولى -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/5c855c35-cad3-4e18-8268-5279cb588360" />
-    </td>
-    
-    <!-- الصورة الثانية -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (16)" src="https://github.com/user-attachments/assets/51b852c9-4c06-4877-8355-4d5be09f5648" />
-    </td>
+<div align="center">
+  <img src="https://github.com/user-attachments/assets/f3b0b2af-9242-476f-808f-ac10a8c9c8fa
+" width="200" alt="Splash"/>
+  <img src="screenshots/sign_up.jpg" width="200" alt="Sign Up"/>
+  <img src="screenshots/login.jpg" width="200" alt="Login"/>
+</div>
 
-    <!-- الصورة الثالثة -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (17)" src="https://github.com/user-attachments/assets/311e47e8-25c0-4692-9b37-48af4f4b36bd" />
-    </td>
-  </tr>
+<div align="center">
+  <img src="screenshots/onboarding one.jpg" width="200" alt="Onboarding 1"/>
+  <img src="screenshots/onboardingtwo.jpg" width="200" alt="Onboarding 2"/>
+  <img src="screenshots/onboardingthree.jpg" width="200" alt="Onboarding 3"/>
+</div>
 
-  <tr>
-    <!-- الصورة الرابعة -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (18)" src="https://github.com/user-attachments/assets/79f0e518-d6c3-46ef-976b-7072b8108ffd" />
-    </td>
+<div align="center">
+  <img src="screenshots/home.jpg" width="200" alt="Home"/>
+  <img src="screenshots/loadinghome.jpg" width="200" alt="Loading Home"/>
+  <img src="screenshots/search.jpg" width="200" alt="Search"/>
+</div>
 
-    <!-- الصورة الخامسة -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (19)" src="https://github.com/user-attachments/assets/befeff55-79f8-4fae-baf8-9282c446c6dc" />
-    </td>
+<div align="center">
+  <img src="screenshots/search_empty.jpg" width="200" alt="Search Empty"/>
+  <img src="screenshots/my_post.jpg" width="200" alt="My Post"/>
+  <img src="screenshots/item_details.jpg" width="200" alt="Item Details"/>
+</div>
 
-    <!-- الصورة السادسة -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (20)" src="https://github.com/user-attachments/assets/a709042e-5461-40e8-a996-41b85ce01e6b" />
-    </td>
-  </tr>
+<div align="center">
+  <img src="screenshots/report_item.jpg" width="200" alt="Report Item"/>
+  <img src="screenshots/report_item2.jpg" width="200" alt="Report Item 2"/>
+  <img src="screenshots/claim.jpg" width="200" alt="Claim"/>
+</div>
 
-  <tr>
-    <!-- الصورة السابعة -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (21)" src="https://github.com/user-attachments/assets/72b20728-1079-4160-a3a8-a009632956c3" />
-    </td>
+<div align="center">
+  <img src="screenshots/noclaim.jpg" width="200" alt="No Claim"/>
+  <img src="screenshots/claim_review.jpg" width="200" alt="Claim Review"/>
+  <img src="screenshots/claim_approved.jpg" width="200" alt="Claim Approved"/>
+</div>
 
-    <!-- الصورة الثامنة -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (22)" src="https://github.com/user-attachments/assets/a4616db4-36c8-4192-9c3d-e880f9b52120" />
-    </td>
+<div align="center">
+  <img src="screenshots/notification_empty.jpg" width="200" alt="Notifications Empty"/>
+  <img src="screenshots/notifications.jpg" width="200" alt="Notifications"/>
+  <img src="screenshots/profile.jpg" width="200" alt="Profile"/>
+</div>
 
-    <!-- الصورة التاسعة -->
-    <td style="width: 33.33%; border: 1px solid #ddd; padding: 8px; border-radius: 12px; text-align: center; background: #fafafa; vertical-align: top;">
-      <img width="100%" style="border-radius:10px; height: auto;" alt="screenshot-rocks (23)" src="https://github.com/user-attachments/assets/7af735df-01cb-4f71-a44d-fc8f9fe20adc" />
-    </td>
-  </tr>
-</table>
+<div align="center">
+  <img src="screenshots/review_claim.jpg" width="200" alt="Review Claim"/>
+</div>
 
 
   <h2>✨ Features</h2>
