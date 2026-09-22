@@ -4,8 +4,7 @@
 <body>
 
 <header class="hero">
-  <div class="arabic">دليلي</div>
-  <h1>Daleeli</h1>
+  <h1>Daleeli 🗺️</h1>
   <p class="tagline">A travel companion for Egypt that tells you the truth, not the brochure version.</p>
   <div class="badges">
     <span class="badge">Flutter</span>
@@ -30,7 +29,8 @@
   <h2>📸 Screenshots</h2>
   <p>Replace each placeholder box below with a real screenshot from your app.</p>
   <div class="screens-grid">
-    <div class="screen-slot"><span class="icon">🌅</span><span class="label">Splash</span><span class="hint">screenshots/splash.png</span></div>
+    <div class="screen-slot"><span class="icon">🌅</span><span class="label">Splash</span><span class="hint"> <img width="1080" height="1920" alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/5c855c35-cad3-4e18-8268-5279cb588360" />
+ </span></div>
     <div class="screen-slot"><span class="icon">👋</span><span class="label">Onboarding</span><span class="hint">screenshots/onboarding.png</span></div>
     <div class="screen-slot"><span class="icon">🔑</span><span class="label">Sign In</span><span class="hint">screenshots/signin.png</span></div>
     <div class="screen-slot"><span class="icon">🗺️</span><span class="label">Explore</span><span class="hint">screenshots/explore.png</span></div>
@@ -119,7 +119,7 @@ cd daleeli</code></pre>
   <h2>📂 Seed Data</h2>
   <p>
     Initial place data (name, photo, category, governorate, reviews) lives in
-    < to Firestore on first run.
+    to Firestore on first run.
   </p>
 
   <h2>👩‍💻 Author</h2>
