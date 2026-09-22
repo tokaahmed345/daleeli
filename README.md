@@ -39,7 +39,8 @@
   
   <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">👋</span><span class="label"><strong>Onboarding</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">screenshots/onboarding.png</span>
+    <span class="hint" style="font-size: 12px; color: #666;">  <img width="1080" height="1920" alt="screenshot-rocks (16)" src="https://github.com/user-attachments/assets/51b852c9-4c06-4877-8355-4d5be09f5648" />
+ </span>
   </div>
 
   <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
