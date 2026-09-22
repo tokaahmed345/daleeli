@@ -32,47 +32,22 @@
   <img src="https://github.com/user-attachments/assets/f3b0b2af-9242-476f-808f-ac10a8c9c8fa" width="200" alt="Splash"/>
   <img width="200"  alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/c798db46-f74d-4b95-bf8d-c1d060d2cc7a" />
 
-  <img src="screenshots/login.jpg" width="200" alt="Login"/>
+<img width="200"  src="https://github.com/user-attachments/assets/0633f064-22fd-40db-99eb-0422384d3c3f" />
+
 </div>
 
 <div align="center">
-  <img src="screenshots/onboarding one.jpg" width="200" alt="Onboarding 1"/>
-  <img src="screenshots/onboardingtwo.jpg" width="200" alt="Onboarding 2"/>
-  <img src="screenshots/onboardingthree.jpg" width="200" alt="Onboarding 3"/>
+ <img width="200"  src="https://github.com/user-attachments/assets/8a1cb2b5-1312-42e5-bbee-eeb70c877cf5" />
+<img width="200"  src="https://github.com/user-attachments/assets/de0aa6c2-8b5c-4c50-8846-a9da06ce6259" />
+
+<img width="200"   src="https://github.com/user-attachments/assets/8666851f-05f9-4340-9e18-61e105f6eea0" />
 </div>
 
 <div align="center">
-  <img src="screenshots/home.jpg" width="200" alt="Home"/>
-  <img src="screenshots/loadinghome.jpg" width="200" alt="Loading Home"/>
-  <img src="screenshots/search.jpg" width="200" alt="Search"/>
-</div>
+<img width="200"   src="https://github.com/user-attachments/assets/c5732fe9-0d1a-445f-b2c9-77e71527e931" />
+<img width="200"  src="https://github.com/user-attachments/assets/2da6c86d-6113-42cc-a96e-f57e936db994" />
 
-<div align="center">
-  <img src="screenshots/search_empty.jpg" width="200" alt="Search Empty"/>
-  <img src="screenshots/my_post.jpg" width="200" alt="My Post"/>
-  <img src="screenshots/item_details.jpg" width="200" alt="Item Details"/>
-</div>
-
-<div align="center">
-  <img src="screenshots/report_item.jpg" width="200" alt="Report Item"/>
-  <img src="screenshots/report_item2.jpg" width="200" alt="Report Item 2"/>
-  <img src="screenshots/claim.jpg" width="200" alt="Claim"/>
-</div>
-
-<div align="center">
-  <img src="screenshots/noclaim.jpg" width="200" alt="No Claim"/>
-  <img src="screenshots/claim_review.jpg" width="200" alt="Claim Review"/>
-  <img src="screenshots/claim_approved.jpg" width="200" alt="Claim Approved"/>
-</div>
-
-<div align="center">
-  <img src="screenshots/notification_empty.jpg" width="200" alt="Notifications Empty"/>
-  <img src="screenshots/notifications.jpg" width="200" alt="Notifications"/>
-  <img src="screenshots/profile.jpg" width="200" alt="Profile"/>
-</div>
-
-<div align="center">
-  <img src="screenshots/review_claim.jpg" width="200" alt="Review Claim"/>
+<img width="200"   src="https://github.com/user-attachments/assets/5d9141cc-d2d1-4bc0-876a-a04d7459163a" />
 </div>
 
 
