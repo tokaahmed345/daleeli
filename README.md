@@ -55,7 +55,8 @@
   </div>
 
   <!-- عنصر Explore -->
-  <div class="screen-slot"   <img width="1080" height="1920" alt="screenshot-rocks (19)" src="https://github.com/user-attachments/assets/befeff55-79f8-4fae-baf8-9282c446c6dc" />
+  <div class="screen-slot"  >
+    <img width="1080" height="1920" alt="screenshot-rocks (19)" src="https://github.com/user-attachments/assets/befeff55-79f8-4fae-baf8-9282c446c6dc" />
 </span>
   </div>
 
