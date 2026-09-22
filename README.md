@@ -38,7 +38,7 @@
   </div>
   
   <!-- عنصر Onboarding -->
-  <div class="screen-slot" 
+  <div class="screen-slot">
       <img width="100%" style="border-radius:10px; margin-top:8px;" alt="screenshot-rocks (16)" src="https://github.com/user-attachments/assets/51b852c9-4c06-4877-8355-4d5be09f5648" />
     </span>
   </div>
@@ -59,9 +59,9 @@
   </div>
 
   <!-- عنصر Place Details -->
-  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
-    <span class="icon">📍</span><span class="label"><strong>Place Details</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/details.png</span>
+  <div class="screen-slot">
+ <img width="1080" height="1920" alt="screenshot-rocks (20)" src="https://github.com/user-attachments/assets/a709042e-5461-40e8-a996-41b85ce01e6b" />
+</span>
   </div>
 
   <!-- عنصر Honest Truth -->
