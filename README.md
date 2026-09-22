@@ -29,10 +29,10 @@
 <h2>📸 Screenshots</h2>
 
 <div align="center">
-  <img src="https://github.com/user-attachments/assets/f3b0b2af-9242-476f-808f-ac10a8c9c8fa" width="500" alt="Splash"/>
-  <img width="500"  alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/c798db46-f74d-4b95-bf8d-c1d060d2cc7a" />
+  <img src="https://github.com/user-attachments/assets/f3b0b2af-9242-476f-808f-ac10a8c9c8fa" width="200" alt="Splash"/>
+  <img width="200"  alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/c798db46-f74d-4b95-bf8d-c1d060d2cc7a" />
 
-<img width="500"  src="https://github.com/user-attachments/assets/0633f064-22fd-40db-99eb-0422384d3c3f" />
+<img width="200"  src="https://github.com/user-attachments/assets/0633f064-22fd-40db-99eb-0422384d3c3f" />
 
 </div>
 
