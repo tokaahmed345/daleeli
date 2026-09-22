@@ -29,59 +29,66 @@
 <h2>📸 Screenshots</h2>
 <p>Replace each placeholder box below with a real screenshot from your app.</p>
 
-<div class="screens-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+<div class="screens-grid" style="display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 16px; padding-bottom: 10px;">
+  
+  <!-- عنصر Splash -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">🌅</span><span class="label"><strong>Splash</strong></span><br>
-    <span class="hint"> 
+    <span class="hint">  
       <img width="100%" style="border-radius:10px; margin-top:8px;" alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/5c855c35-cad3-4e18-8268-5279cb588360" />
     </span>
   </div>
   
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+  <!-- عنصر Onboarding -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">👋</span><span class="label"><strong>Onboarding</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">  <img width="1080" height="1920" alt="screenshot-rocks (16)" src="https://github.com/user-attachments/assets/51b852c9-4c06-4877-8355-4d5be09f5648" />
- </span>
+    <span class="hint" style="font-size: 12px; color: #666;">  
+      <img width="100%" style="border-radius:10px; margin-top:8px;" alt="screenshot-rocks (16)" src="https://github.com/user-attachments/assets/51b852c9-4c06-4877-8355-4d5be09f5648" />
+    </span>
   </div>
 
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+  <!-- عنصر Sign In -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">🔑</span><span class="label"><strong>Sign In</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">screenshots/signin.png</span>
+    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/signin.png</span>
   </div>
 
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+  <!-- عنصر Explore -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">🗺️</span><span class="label"><strong>Explore</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">screenshots/explore.png</span>
+    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/explore.png</span>
   </div>
 
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+  <!-- عنصر Place Details -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">📍</span><span class="label"><strong>Place Details</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">screenshots/details.png</span>
+    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/details.png</span>
   </div>
 
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+  <!-- عنصر Honest Truth -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">✨</span><span class="label"><strong>Honest Truth</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">screenshots/honest_truth.png</span>
+    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/honest_truth.png</span>
   </div>
 
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+  <!-- عنصر My Trips -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">🧳</span><span class="label"><strong>My Trips</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">screenshots/trips.png</span>
+    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/trips.png</span>
   </div>
 
-  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+  <!-- عنصر Profile -->
+  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">👤</span><span class="label"><strong>Profile</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666;">screenshots/profile.png</span>
+    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;">screenshots/profile.png</span>
   </div>
+
 </div>
 
 <p style="font-size:13px; margin-top:15px;">
   Example of how to swap a placeholder for a real image once you have it:<br>
   <code>&lt;img src="screenshots/explore.png" alt="Explore screen" style="width:100%; border-radius:14px;"&gt;</code>
 </p>
-  <p style="font-size:13px; margin-top:10px;">
-    Example of how to swap a placeholder for a real image once you have it:<br>
-    <code>&lt;img src="screenshots/explore.png" alt="Explore screen" style="width:100%; border-radius:14px;"&gt;</code>
-  </p>
 
   <h2>✨ Features</h2>
 
