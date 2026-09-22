@@ -1,18 +1,27 @@
 import 'package:bloc/bloc.dart';
-import 'package:daleeli/feature/auth/domain/repo/register_repo.dart';
-import 'package:flutter/material.dart';
+import 'package:daleeli/feature/auth/data/model/register_request_model.dart';
+import 'package:daleeli/feature/auth/domain/entity/register_entity.dart';
+import 'package:daleeli/feature/auth/domain/usecase/register_usecase.dart';
+import 'package:equatable/equatable.dart';
 
 part 'register_state.dart';
 
 class RegisterCubit extends Cubit<RegisterState> {
-  RegisterRepo _registerRepo;
-  RegisterCubit(
-      this._registerRepo
-      ) : super(RegisterInitial());
+  final RegisterUseCase useCase;
+  RegisterCubit({required this.useCase}) : super(RegisterInitial());
 
+  Future<void> createAccount({
+    required RegisterRequestModel registerRequestedModel,
+  }) async {
+    emit(RegisterLoading());
 
-
-  register(){
-    _registerRepo.register();
+    final result = await useCase.register(
+      registerRequetModel: registerRequestedModel,
+    );
+    result.fold((fail) => emit(RegisterFailure(errorMessage: fail.message)), (
+      user,
+    ) async {
+      emit(RegisterSuccess(registerEntity: user));
+    });
   }
 }

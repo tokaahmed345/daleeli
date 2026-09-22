@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "36589691175",
+    "project_id": "daleeli-ff08a",
+    "storage_bucket": "daleeli-ff08a.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:36589691175:android:13c50d0b7d6c0f44400902",
+        "android_client_info": {
+          "package_name": "com.example.daleeli"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAmYoWotYVpq-oAtRuDHnCJLbNz0QV76fk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

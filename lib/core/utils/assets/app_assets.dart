@@ -4,4 +4,5 @@ class AppAssets {
   static String onBoardingTwo = "assets/images/on_boarding_image(2).png";
 
     static String onBoardingThree="assets/images/on_boarding_image(3).png";
+   static String background= "assets/images/background.jfif";
 }

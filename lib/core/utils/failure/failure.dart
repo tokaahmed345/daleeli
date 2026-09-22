@@ -46,6 +46,3 @@ class Failure {
   
 }
 
-class AiAnalysisFailure extends Failure {
-   AiAnalysisFailure(super.message);
-}

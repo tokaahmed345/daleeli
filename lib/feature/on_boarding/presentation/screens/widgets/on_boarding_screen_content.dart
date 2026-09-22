@@ -41,7 +41,8 @@ class _OnBoardingScreenContentState extends State<OnBoardingScreenContent> {
                   alignment: Alignment.topRight,
                   child: TextButton(
                     onPressed: () {
-                      Navigator.pushNamed(context, RoutesName.register);
+                   Navigator.pushNamed(context, RoutesName.login);
+
                     },
                     child: const Text(
                       'Skip',
@@ -76,7 +77,8 @@ class _OnBoardingScreenContentState extends State<OnBoardingScreenContent> {
                           const SizedBox(height: 16),
                           Text(
                             page.description,
-                            style: AppStyle.text14,
+                            style: AppStyle.text14
+                          ,
                             textAlign: TextAlign.center,
                           ),
                         ],
@@ -115,7 +117,7 @@ class _OnBoardingScreenContentState extends State<OnBoardingScreenContent> {
                           curve: Curves.easeInOut,
                         );
                       } else {
-                        Navigator.pushNamed(context, RoutesName.register);
+                        Navigator.pushNamed(context, RoutesName.login);
                       }
                     },
 

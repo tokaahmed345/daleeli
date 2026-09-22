@@ -1,19 +1,11 @@
-import 'package:dio/dio.dart';
-
-class RegisterRepo {
-
-  final Dio _dio;
-  RegisterRepo(this._dio);
+import 'package:daleeli/core/utils/failure/failure.dart';
+import 'package:daleeli/feature/auth/data/model/register_request_model.dart';
+import 'package:daleeli/feature/auth/domain/entity/register_entity.dart';
+ import 'package:dartz/dartz.dart';
 
 
-
-  register()async{
-    try{
-      final response=await _dio.post('path',data: {
-
-      });
-    }catch(e){
-
-    }
-  }
-}
+abstract class RegisterRepo{
+  Future<Either<Failure,RegisterEntity>>register({    required RegisterRequestModel registerRequetModel,
+});
+ }
+  
