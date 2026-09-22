@@ -50,7 +50,11 @@
   <!-- عنصر Sign In -->
   <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
     <span class="icon">🔑</span><span class="label"><strong>Sign In</strong></span><br>
-    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;"> <img width="1080" height="1920" alt="screenshot-rocks (17)" src="https://github.com/user-attachments/assets/311e47e8-25c0-4692-9b37-48af4f4b36bd" />
+    <span class="hint" style="font-size: 12px; color: #666; display: block; margin-top: 20px;"> <img width="1080" height="1920" alt="screenshot-rocks (17)" src="https://github.com/user-attachments/assets/311e47e8-25c0-4692-9b37-48af4f4b36bd" 
+                                                                                                  />
+     <img width="1080" height="1920" alt="screenshot-rocks (18)" src="https://github.com/user-attachments/assets/79f0e518-d6c3-46ef-976b-7072b8108ffd" />
+
+                                                                                                
 </span>
   </div>
 
