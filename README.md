@@ -26,19 +26,57 @@
     brochure copy.
   </p>
 
-  <h2>📸 Screenshots</h2>
-  <p>Replace each placeholder box below with a real screenshot from your app.</p>
-  <div class="screens-grid">
-    <div class="screen-slot"><span class="icon">🌅</span><span class="label">Splash</span><span class="hint"> <img width="1080" height="1920" alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/5c855c35-cad3-4e18-8268-5279cb588360" />
- </span></div>
-    <div class="screen-slot"><span class="icon">👋</span><span class="label">Onboarding</span><span class="hint">screenshots/onboarding.png</span></div>
-    <div class="screen-slot"><span class="icon">🔑</span><span class="label">Sign In</span><span class="hint">screenshots/signin.png</span></div>
-    <div class="screen-slot"><span class="icon">🗺️</span><span class="label">Explore</span><span class="hint">screenshots/explore.png</span></div>
-    <div class="screen-slot"><span class="icon">📍</span><span class="label">Place Details</span><span class="hint">screenshots/details.png</span></div>
-    <div class="screen-slot"><span class="icon">✨</span><span class="label">Honest Truth</span><span class="hint">screenshots/honest_truth.png</span></div>
-    <div class="screen-slot"><span class="icon">🧳</span><span class="label">My Trips</span><span class="hint">screenshots/trips.png</span></div>
-    <div class="screen-slot"><span class="icon">👤</span><span class="label">Profile</span><span class="hint">screenshots/profile.png</span></div>
+<h2>📸 Screenshots</h2>
+<p>Replace each placeholder box below with a real screenshot from your app.</p>
+
+<div class="screens-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 16px;">
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">🌅</span><span class="label"><strong>Splash</strong></span><br>
+    <span class="hint"> 
+      <img width="100%" style="border-radius:10px; margin-top:8px;" alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/5c855c35-cad3-4e18-8268-5279cb588360" />
+    </span>
   </div>
+  
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">👋</span><span class="label"><strong>Onboarding</strong></span><br>
+    <span class="hint" style="font-size: 12px; color: #666;">screenshots/onboarding.png</span>
+  </div>
+
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">🔑</span><span class="label"><strong>Sign In</strong></span><br>
+    <span class="hint" style="font-size: 12px; color: #666;">screenshots/signin.png</span>
+  </div>
+
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">🗺️</span><span class="label"><strong>Explore</strong></span><br>
+    <span class="hint" style="font-size: 12px; color: #666;">screenshots/explore.png</span>
+  </div>
+
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">📍</span><span class="label"><strong>Place Details</strong></span><br>
+    <span class="hint" style="font-size: 12px; color: #666;">screenshots/details.png</span>
+  </div>
+
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">✨</span><span class="label"><strong>Honest Truth</strong></span><br>
+    <span class="hint" style="font-size: 12px; color: #666;">screenshots/honest_truth.png</span>
+  </div>
+
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">🧳</span><span class="label"><strong>My Trips</strong></span><br>
+    <span class="hint" style="font-size: 12px; color: #666;">screenshots/trips.png</span>
+  </div>
+
+  <div class="screen-slot" style="border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
+    <span class="icon">👤</span><span class="label"><strong>Profile</strong></span><br>
+    <span class="hint" style="font-size: 12px; color: #666;">screenshots/profile.png</span>
+  </div>
+</div>
+
+<p style="font-size:13px; margin-top:15px;">
+  Example of how to swap a placeholder for a real image once you have it:<br>
+  <code>&lt;img src="screenshots/explore.png" alt="Explore screen" style="width:100%; border-radius:14px;"&gt;</code>
+</p>
   <p style="font-size:13px; margin-top:10px;">
     Example of how to swap a placeholder for a real image once you have it:<br>
     <code>&lt;img src="screenshots/explore.png" alt="Explore screen" style="width:100%; border-radius:14px;"&gt;</code>
