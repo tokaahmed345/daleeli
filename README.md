@@ -32,9 +32,7 @@
 <div class="screens-grid" style="display: flex; flex-wrap: nowrap; overflow-x: auto; gap: 16px; padding-bottom: 10px;">
   
   <!-- عنصر Splash -->
-  <div class="screen-slot" style="min-width: 180px; flex: 0 0 auto; border: 1px solid #ddd; padding: 12px; border-radius: 12px; text-align: center;">
-    <span class="icon">🌅</span><span class="label"><strong>Splash</strong></span><br>
-    <span class="hint">  
+  <div class="screen-slot">
       <img width="100%" style="border-radius:10px; margin-top:8px;" alt="screenshot-rocks (15)" src="https://github.com/user-attachments/assets/5c855c35-cad3-4e18-8268-5279cb588360" />
     </span>
   </div>
