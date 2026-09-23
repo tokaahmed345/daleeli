@@ -68,10 +68,7 @@
     <p>Gemini composes multi-day trip plans from the places already in the app's dataset, grouped by region and duration.</p>
   </div>
 
-  <div class="feature-card">
-    <h4>Share Your Experience</h4>
-    <p>Users can post a photo and short comment about a place they've visited, shown in a "Recent Experiences" feed on Home.</p>
-  </div>
+
 
   <div class="feature-card">
     <h4>My Trips</h4>
