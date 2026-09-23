@@ -3,6 +3,7 @@ import 'package:daleeli/core/utils/dependency_injection/service_locator.dart';
 import 'package:daleeli/core/utils/styles/app_style.dart';
 import 'package:daleeli/feature/ai_suggestions_places/presentation/screens/suggestion_places_screen.dart';
 import 'package:daleeli/feature/home/presentation/screens/home_screen.dart';
+import 'package:daleeli/feature/profile/presentation/screens/profle_screen.dart';
 import 'package:daleeli/feature/saved_place/presentation/cubit/saved_places_cubit.dart';
 import 'package:daleeli/feature/saved_place/presentation/screens/saved_screen.dart';
 import 'package:flutter/material.dart';
@@ -41,7 +42,7 @@ class _MainNavigationScreenViewState extends State<MainNavigationScreenView> {
     const HomeScreen(),
     const SuggestionPlacesScreen(),
     const SavedScreen(),
-    const Placeholder(),
+    const ProfileScreen(),
   ];
 
   @override
