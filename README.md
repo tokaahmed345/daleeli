@@ -89,6 +89,8 @@
     <tr><td>UI / UX polish</td><td>google_fonts, flutter_animate, flutter_spinkit, shimmer, flutter_screenutil</td></tr>
     <tr><td>Config</td><td>flutter_dotenv (.env)</td></tr>
     <tr><td>Value equality</td><td>equatable</td></tr>
+    <tr><td>CI CD</td><td>firebase_app_distribution</td></tr>
+
   </table>
 
   <h2>🏗 Architecture</h2>
