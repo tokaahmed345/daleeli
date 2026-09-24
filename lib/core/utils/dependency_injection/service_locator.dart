@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:daleeli/core/sharedprefrence.dart';
 import 'package:daleeli/core/utils/networking/api_service.dart';
 import 'package:daleeli/core/utils/networking/dio_consumer.dart';
 import 'package:daleeli/core/utils/networking/firebase/firestore/firebase_firestore_service.dart';
@@ -41,7 +42,7 @@ import 'package:dio/dio.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
 import 'package:get_it/get_it.dart';
-// import 'package:supabase_flutter/supabase_flutter.dart';
+import 'package:shared_preferences/shared_preferences.dart';
 
 final getIt = GetIt.instance;
 Future<void> setupServiceLocator() async {
@@ -52,7 +53,10 @@ Future<void> setupServiceLocator() async {
   // getIt.registerLazySingleton<SupabaseClient>(() => Supabase.instance.client);
   getIt.registerLazySingleton<Dio>(() => Dio());
   getIt.registerLazySingleton<ApiService>(() => DioConsumer(dio: getIt()));
-
+  final sharedPreferences = await SharedPreferences.getInstance();
+  
+  getIt.registerLazySingleton<SharedPreferences>(() => sharedPreferences);
+getIt.registerLazySingleton<SharedPrefs>(() => SharedPrefs(sharedPreferences: getIt()));
   getIt.registerLazySingleton<FirebaseFirestoreService>(
     () => FirebaseFirestoreService(firestore: getIt()),
   );

@@ -8,7 +8,7 @@ import 'package:firebase_auth/firebase_auth.dart';
 class RegisterFirebaseRemoteDataSourceImpl
     extends RegisterFirebaseRemoteDataSource {
   final FirebaseAuth firebaseAuth;
-  final FirestoreService firestore; 
+  final FirestoreService firestore;
 
   RegisterFirebaseRemoteDataSourceImpl({
     required this.firebaseAuth,
@@ -23,24 +23,27 @@ class RegisterFirebaseRemoteDataSourceImpl
       email: registerModel.email,
       password: registerModel.password,
     );
-
-    final userUid = userCredential.user?.uid;
-  
-    final user = RegisterModel(
+    final user = userCredential.user;
+    final userUid = user?.uid;
+    if (user != null) {
+      user.updateDisplayName(registerModel.name.trim());
+      user.reload();
+    }
+    final users = RegisterModel(
       id: userUid!,
       name: registerModel.name,
       email: registerModel.email,
     );
 
     final userData = registerModel.toMap();
-    userData['id'] = userUid; 
+    userData['id'] = userUid;
 
     await firestore.postData(
-      collectionPath: FirestoreCollections.users, 
-      documentId: userUid, 
+      collectionPath: FirestoreCollections.users,
+      documentId: userUid,
       data: userData,
     );
 
-    return user;
+    return users;
   }
 }

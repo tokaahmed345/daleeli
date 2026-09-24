@@ -1,0 +1,16 @@
+default_platform(:android)
+
+platform :android do
+  lane :distribute do
+    sh("flutter build apk --release", log: true)
+
+    firebase_app_distribution(
+      app: "1:36589691175:android:13c50d0b7d6c0f44400902",
+      groups: "testers",
+      release_notes: "new version",
+      android_artifact_type: "APK",
+      android_artifact_path: "../build/app/outputs/flutter-apk/app-release.apk",
+      firebase_cli_path: "firebase"
+    )
+  end
+end

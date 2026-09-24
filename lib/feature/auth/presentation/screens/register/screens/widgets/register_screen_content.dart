@@ -1,3 +1,4 @@
+import 'package:daleeli/core/utils/router/routes_name.dart';
 import 'package:daleeli/feature/auth/presentation/screens/register/cubit/register_cubit.dart';
 
 import 'package:daleeli/core/utils/colors/app_colors.dart';
@@ -48,9 +49,7 @@ class _RegisterScreenContentState extends State<RegisterScreenContent> {
       context: context,
       barrierDismissible: false,
       builder: (context) => AlertDialog(
-        shape: RoundedRectangleBorder(
-          borderRadius: BorderRadius.circular(20),
-        ),
+        shape: RoundedRectangleBorder(borderRadius: BorderRadius.circular(20)),
         backgroundColor: AppColors.background,
         title: Row(
           children: [
@@ -97,7 +96,6 @@ class _RegisterScreenContentState extends State<RegisterScreenContent> {
     return BlocConsumer<RegisterCubit, RegisterState>(
       listener: (context, state) {
         if (state is RegisterLoading) {
-          // يمكنك إظهار مؤشر تحميل هنا إذا أردت
         } else if (state is RegisterSuccess) {
           _showCustomAlert(
             context: context,
@@ -105,8 +103,7 @@ class _RegisterScreenContentState extends State<RegisterScreenContent> {
             message: 'Account created successfully!',
             isSuccess: true,
             onPressed: () {
-              // الانتقال للشاشة الرئيسية أو العودة للوجين بعد النجاح
-              Navigator.pop(context);
+              Navigator.pushNamed(context, RoutesName.home);
             },
           );
         } else if (state is RegisterFailure) {
@@ -209,9 +206,9 @@ class _RegisterScreenContentState extends State<RegisterScreenContent> {
                           obscure: _isConfirmPasswordObscured,
                           validator: (value) =>
                               Validators.confirmPasswordValidator(
-                            value,
-                            _passwordController.text,
-                          ),
+                                value,
+                                _passwordController.text,
+                              ),
                           icon: Icons.lock_outline,
                           suffixIcon: _isConfirmPasswordObscured
                               ? Icons.visibility_off
@@ -224,7 +221,7 @@ class _RegisterScreenContentState extends State<RegisterScreenContent> {
                           },
                         ),
                         const SizedBox(height: 30),
-                        
+
                         // زر التسجيل (يعرض علامة تحميل إذا كانت الحالة Loading)
                         state is RegisterLoading
                             ? const Center(
@@ -240,13 +237,11 @@ class _RegisterScreenContentState extends State<RegisterScreenContent> {
                                     final requestModel = RegisterRequestModel(
                                       name: _nameController.text.trim(),
                                       email: _emailController.text.trim(),
-                                      password: _passwordController.text.trim(), 
+                                      password: _passwordController.text.trim(),
                                     );
-                                    context
-                                        .read<RegisterCubit>()
-                                        .createAccount(
-                                          registerRequestedModel: requestModel,
-                                        );
+                                    context.read<RegisterCubit>().createAccount(
+                                      registerRequestedModel: requestModel,
+                                    );
                                   }
                                 },
                               ),

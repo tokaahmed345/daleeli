@@ -4,8 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:daleeli/core/utils/assets/app_assets.dart';
-import 'package:daleeli/core/utils/colors/app_colors.dart';
-import 'package:daleeli/core/utils/widgets/custom_elevated_button.dart';
 import 'package:daleeli/feature/home/domain/entity/places_entity.dart';
 import 'package:daleeli/feature/home/presentation/screens/widgets/place_details/place_details_header.dart';
 import 'package:daleeli/feature/home/presentation/screens/widgets/place_details/place_tabbar_widgets.dart';

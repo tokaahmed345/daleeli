@@ -1,5 +1,4 @@
 import 'package:daleeli/core/utils/colors/app_colors.dart';
-import 'package:daleeli/core/utils/dependency_injection/service_locator.dart';
 import 'package:daleeli/core/utils/styles/app_style.dart';
 import 'package:daleeli/feature/ai_suggestions_places/presentation/screens/suggestion_places_screen.dart';
 import 'package:daleeli/feature/home/presentation/screens/home_screen.dart';
@@ -15,15 +14,7 @@ class MainNavigationScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return MultiBlocProvider(
-      providers: [
-        BlocProvider(
-          create: (context) =>
-              getIt.get<SavedPlacesCubit>()..fetchSavedPlaces(),
-        ),
-      ],
-      child: const MainNavigationScreenView(),
-    );
+    return const MainNavigationScreenView();
   }
 }
 

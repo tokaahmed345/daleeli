@@ -1,8 +1,11 @@
 import 'package:daleeli/core/utils/assets/app_assets.dart';
 import 'package:daleeli/core/utils/colors/app_colors.dart';
+import 'package:daleeli/core/utils/dependency_injection/service_locator.dart';
+import 'package:daleeli/core/utils/helper/profile_helper.dart';
 import 'package:daleeli/core/utils/styles/app_style.dart';
 import 'package:daleeli/core/utils/widgets/custom_elevated_button.dart';
 import 'package:daleeli/feature/profile/presentation/screens/widgets/profile_menu_card.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 
 class ProfileScreenContent extends StatelessWidget {
@@ -10,6 +13,8 @@ class ProfileScreenContent extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final user = getIt.get<FirebaseAuth>().currentUser;
+
     return Container(
       width: double.infinity,
       height: double.infinity,
@@ -24,7 +29,6 @@ class ProfileScreenContent extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.stretch,
           children: [
-            // User Avatar & Info Header
             Center(
               child: Column(
                 children: [
@@ -39,7 +43,7 @@ class ProfileScreenContent extends StatelessWidget {
                   ),
                   const SizedBox(height: 12),
                   Text(
-                    'Toka Ahmed',
+user?.displayName??"",
                     style: AppStyle.text20.copyWith(
                       color: AppColors.charcoal,
                       fontWeight: FontWeight.bold,
@@ -47,7 +51,7 @@ class ProfileScreenContent extends StatelessWidget {
                   ),
                   const SizedBox(height: 4),
                   Text(
-                    'toka.ahmed@example.com',
+                    user?.email ?? "",
                     style: AppStyle.text14.copyWith(color: AppColors.grey700),
                   ),
                 ],
@@ -59,25 +63,28 @@ class ProfileScreenContent extends StatelessWidget {
               icon: Icons.headset_mic_outlined,
               title: 'Help & Support',
               subtitle: 'Contact us for any issue',
-              onTap: () {},
+              onTap: () => ProfileHelper.onHelpTap(context),
             ),
 
             ProfileMenuCard(
               icon: Icons.share_outlined,
               title: 'Share App',
               subtitle: 'Tell your friends about Daleeli',
-              onTap: () {},
+              onTap: () => ProfileHelper.onShareTap(context),
             ),
 
             ProfileMenuCard(
               icon: Icons.info_outline,
               title: 'About',
               subtitle: 'App version & info',
-              onTap: () {},
+              onTap: () => ProfileHelper.onAboutTap(context),
             ),
 
             const SizedBox(height: 12),
-            CustomElevatedButton(text: "Log out", onTap: () {}),
+            CustomElevatedButton(
+              text: 'Log out',
+              onTap: () => ProfileHelper.showLogoutDialog(context),
+            ),
 
             const SizedBox(height: 32),
           ],
