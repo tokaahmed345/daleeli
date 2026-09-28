@@ -9,8 +9,8 @@ final class RegisterInitial extends RegisterState {
 }
 
 final class RegisterLoading extends RegisterState {
-  @override
-  List<Object?> get props => throw UnimplementedError();
+ @override
+  List<Object> get props => [];
 }
 
 final class RegisterSuccess extends RegisterState {

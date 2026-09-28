@@ -12,7 +12,7 @@ class PlacesCubit extends Cubit<PlacesState> {
   String _currentCategory = "All";
   List<PlacesEntity> _cachedPlaces = [];
 
-  void fetchPlaces() async {
+ Future< void >fetchPlaces() async {
     if (isClosed) return;
     emit(PlacesLoading());
 

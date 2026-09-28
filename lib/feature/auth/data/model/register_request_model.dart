@@ -1,6 +1,6 @@
 import 'package:daleeli/core/utils/networking/firebase/firestore/firestore_fields.dart';
 
-class RegisterRequestModel {
+class RegisterRequestModel  {
   final String name;
   final String email;
    String? id;
