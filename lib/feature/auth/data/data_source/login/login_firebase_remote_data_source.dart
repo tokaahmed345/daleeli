@@ -1,4 +1,3 @@
-import 'package:daleeli/core/utils/networking/firebase/firestore/firestore_service.dart';
 import 'package:daleeli/feature/auth/data/model/login_model.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 
