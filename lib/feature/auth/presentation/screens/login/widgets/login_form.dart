@@ -33,7 +33,7 @@ class _LoginFormState extends State<LoginForm> {
     return BlocConsumer<  LoginCubit, LoginState>(
           listener: (context, state) {
         if (state is LoginSuccess) {
-                    Navigator.pushReplacementNamed(context, RoutesName.home);
+                    Navigator.pushReplacementNamed(context, RoutesName.main);
 
         } else if (state is LogInFailure) {
           showDialog(
@@ -82,9 +82,10 @@ class _LoginFormState extends State<LoginForm> {
                 },
               ),
               const SizedBox(height: 30),
-              state is LoginLoading
-                  ? const Center(child: CircularProgressIndicator())
-                  : CustomElevatedButton(
+           
+                   CustomElevatedButton(
+                    isLoading:               state is LoginLoading
+,
                       text: 'Login',
                       onTap: () {
                         if (_formKey.currentState!.validate()) {

@@ -3,6 +3,7 @@ import 'package:daleeli/core/utils/colors/app_colors.dart';
 import 'package:daleeli/core/utils/dependency_injection/service_locator.dart';
 import 'package:daleeli/core/utils/helper/profile_helper.dart';
 import 'package:daleeli/core/utils/styles/app_style.dart';
+import 'package:daleeli/core/utils/widgets/app_animation.dart';
 import 'package:daleeli/core/utils/widgets/custom_elevated_button.dart';
 import 'package:daleeli/feature/profile/presentation/screens/widgets/profile_menu_card.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -15,79 +16,81 @@ class ProfileScreenContent extends StatelessWidget {
   Widget build(BuildContext context) {
     final user = getIt.get<FirebaseAuth>().currentUser;
 
-    return Container(
-      width: double.infinity,
-      height: double.infinity,
-      decoration: BoxDecoration(
-        image: DecorationImage(
-          image: AssetImage(AppAssets.background),
-          fit: BoxFit.cover,
+    return AppAnimation.detailEntrance(
+      child: Container(
+        width: double.infinity,
+        height: double.infinity,
+        decoration: BoxDecoration(
+          image: DecorationImage(
+            image: AssetImage(AppAssets.background),
+            fit: BoxFit.cover,
+          ),
         ),
-      ),
-      child: SingleChildScrollView(
-        padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.stretch,
-          children: [
-            Center(
-              child: Column(
-                children: [
-                  const CircleAvatar(
-                    radius: 50,
-                    backgroundColor: AppColors.accentGold,
-                    child: Icon(
-                      Icons.person,
-                      size: 50,
-                      color: AppColors.whiteColor,
+        child: SingleChildScrollView(
+          padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 20),
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.stretch,
+            children: [
+              Center(
+                child: Column(
+                  children: [
+                    const CircleAvatar(
+                      radius: 50,
+                      backgroundColor: AppColors.accentGold,
+                      child: Icon(
+                        Icons.person,
+                        size: 50,
+                        color: AppColors.whiteColor,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 12),
-                  Text(
-user?.displayName??"",
-                    style: AppStyle.text20.copyWith(
-                      color: AppColors.charcoal,
-                      fontWeight: FontWeight.bold,
+                    const SizedBox(height: 12),
+                    Text(
+                      user?.displayName ?? "",
+                      style: AppStyle.text20.copyWith(
+                        color: AppColors.charcoal,
+                        fontWeight: FontWeight.bold,
+                      ),
                     ),
-                  ),
-                  const SizedBox(height: 4),
-                  Text(
-                    user?.email ?? "",
-                    style: AppStyle.text14.copyWith(color: AppColors.grey700),
-                  ),
-                ],
+                    const SizedBox(height: 4),
+                    Text(
+                      user?.email ?? "",
+                      style: AppStyle.text14.copyWith(color: AppColors.grey700),
+                    ),
+                  ],
+                ),
               ),
-            ),
-            const SizedBox(height: 30),
+              const SizedBox(height: 30),
 
-            ProfileMenuCard(
-              icon: Icons.headset_mic_outlined,
-              title: 'Help & Support',
-              subtitle: 'Contact us for any issue',
-              onTap: () => ProfileHelper.onHelpTap(context),
-            ),
+              ProfileMenuCard(
+                icon: Icons.headset_mic_outlined,
+                title: 'Help & Support',
+                subtitle: 'Contact us for any issue',
+                onTap: () => ProfileHelper.onHelpTap(context),
+              ),
 
-            ProfileMenuCard(
-              icon: Icons.share_outlined,
-              title: 'Share App',
-              subtitle: 'Tell your friends about Daleeli',
-              onTap: () => ProfileHelper.onShareTap(context),
-            ),
+              ProfileMenuCard(
+                icon: Icons.share_outlined,
+                title: 'Share App',
+                subtitle: 'Tell your friends about Daleeli',
+                onTap: () => ProfileHelper.onShareTap(context),
+              ),
 
-            ProfileMenuCard(
-              icon: Icons.info_outline,
-              title: 'About',
-              subtitle: 'App version & info',
-              onTap: () => ProfileHelper.onAboutTap(context),
-            ),
+              ProfileMenuCard(
+                icon: Icons.info_outline,
+                title: 'About',
+                subtitle: 'App version & info',
+                onTap: () => ProfileHelper.onAboutTap(context),
+              ),
 
-            const SizedBox(height: 12),
-            CustomElevatedButton(
-              text: 'Log out',
-              onTap: () => ProfileHelper.showLogoutDialog(context),
-            ),
+              const SizedBox(height: 12),
+              CustomElevatedButton(
+                text: 'Log out',
+                onTap: () => ProfileHelper.showLogoutDialog(context),
+              ),
 
-            const SizedBox(height: 32),
-          ],
+              const SizedBox(height: 32),
+            ],
+          ),
         ),
       ),
     );

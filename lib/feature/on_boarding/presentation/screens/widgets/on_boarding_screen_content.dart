@@ -108,8 +108,8 @@ class _OnBoardingScreenContentState extends State<OnBoardingScreenContent> {
                   width: double.infinity,
                   height: 50,
                   child: CustomElevatedButton(
-                    textColor: AppColors.blackColor,
-                    backgroundColor: AppColors.primary,
+                    foreground: AppColors.blackColor,
+                    background: AppColors.primary,
                     onTap: () {
                       if (_currentIndex < _pages.length - 1) {
                         _pageController.nextPage(

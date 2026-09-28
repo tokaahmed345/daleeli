@@ -222,18 +222,12 @@ class _RegisterScreenContentState extends State<RegisterScreenContent> {
                         ),
                         const SizedBox(height: 30),
 
-                        // زر التسجيل (يعرض علامة تحميل إذا كانت الحالة Loading)
-                        state is RegisterLoading
-                            ? const Center(
-                                child: CircularProgressIndicator(
-                                  color: AppColors.primary,
-                                ),
-                              )
-                            : CustomElevatedButton(
+                       CustomElevatedButton(
+                        isLoading: state is RegisterLoading
+,
                                 text: 'Register',
                                 onTap: () {
                                   if (_formKey.currentState!.validate()) {
-                                    // استدعاء الـ Cubit لإنشاء الحساب
                                     final requestModel = RegisterRequestModel(
                                       name: _nameController.text.trim(),
                                       email: _emailController.text.trim(),
