@@ -12,6 +12,8 @@
     <span class="badge">Gemini API</span>
     <span class="badge">Clean Architecture</span>
     <span class="badge">BLoC / Cubit</span>
+    <span class="badge">CI/CD</span>
+    <span class="badge">Unit Testing</span>
   </div>
 </header>
 
@@ -40,15 +42,15 @@
  <img width="200"  src="https://github.com/user-attachments/assets/8a1cb2b5-1312-42e5-bbee-eeb70c877cf5" />
 <img width="200"  src="https://github.com/user-attachments/assets/de0aa6c2-8b5c-4c50-8846-a9da06ce6259" />
 
-<img width="200"   src="https://github.com/user-attachments/assets/8666851f-05f9-4340-9e18-61e105f6eea0" />
+<img width="200"    src="https://github.com/user-attachments/assets/8666851f-05f9-4340-9e18-61e105f6eea0" />
 </div>
 
 <div align="center">
-<img width="200"   src="https://github.com/user-attachments/assets/c5732fe9-0d1a-445f-b2c9-77e71527e931" />
+<img width="200"    src="https://github.com/user-attachments/assets/c5732fe9-0d1a-445f-b2c9-77e71527e931" />
 <img width="200"  src="https://github.com/user-attachments/assets/2da6c86d-6113-42cc-a96e-f57e936db994" />
 
-<img width="200"   src="https://github.com/user-attachments/assets/5d9141cc-d2d1-4bc0-876a-a04d7459163a" />
-<img width="200"   src="https://github.com/user-attachments/assets/ad107b3d-8914-45e5-8e07-d39bb59da7d3" />
+<img width="200"    src="https://github.com/user-attachments/assets/5d9141cc-d2d1-4bc0-876a-a04d7459163a" />
+<img width="200"    src="https://github.com/user-attachments/assets/ad107b3d-8914-45e5-8e07-d39bb59da7d3" />
 
 </div>
 
@@ -70,11 +72,19 @@
     <p>Gemini composes multi-day trip plans from the places already in the app's dataset, grouped by region and duration.</p>
   </div>
 
-
-
   <div class="feature-card">
     <h4>My Trips</h4>
     <p>Save places and revisit AI-suggested itineraries in one place.</p>
+  </div>
+
+  <div class="feature-card">
+    <h4>Profile Management <span class="ai-tag" style="background:var(--olive);">USER</span></h4>
+    <p>Dedicated profile screen allowing users to manage their account details, view preferences, and control settings.</p>
+  </div>
+
+  <div class="feature-card">
+    <h4>Automated CI/CD & Unit Testing <span class="ai-tag" style="background:var(--olive);">QA</span></h4>
+    <p>Robust GitHub Actions CI/CD pipeline integrated with automated unit testing (bloc_test & mocktail) for all features to ensure code stability and quality.</p>
   </div>
 
   <h2>🛠 Tech Stack</h2>
@@ -91,16 +101,16 @@
     <tr><td>UI / UX polish</td><td>google_fonts, flutter_animate, flutter_spinkit, shimmer, flutter_screenutil</td></tr>
     <tr><td>Config</td><td>flutter_dotenv (.env)</td></tr>
     <tr><td>Value equality</td><td>equatable</td></tr>
-    <tr><td>CI CD</td><td>firebase_app_distribution</td></tr>
-
+    <tr><td>Testing</td><td>flutter_test, bloc_test, mocktail</td></tr>
+    <tr><td>CI/CD</td><td>GitHub Actions, firebase_app_distribution</td></tr>
   </table>
 
   <h2>🏗 Architecture</h2>
   <p>The project follows Clean Architecture, split into three layers:</p>
   <pre><code>lib/
-  data/            # data sources, models, repository implementations
-  domain/          # entities, repository interfaces, use cases
-  presentation/    # screens, widgets, cubits</code></pre>
+  data/          # data sources, models, repository implementations
+  domain/        # entities, repository interfaces, use cases
+  presentation/  # screens, widgets, cubits</code></pre>
 
   <h2>🚀 Getting Started</h2>
   <h3>1. Clone the project</h3>
@@ -121,7 +131,10 @@ cd daleeli</code></pre>
     <li>Add your <code>google-services.json</code> (Android) / <code>GoogleService-Info.plist</code> (iOS)</li>
   </ul>
 
-  <h3>5. Run the app</h3>
+  <h3>5. Run tests</h3>
+  <pre><code>flutter test</code></pre>
+
+  <h3>6. Run the app</h3>
   <pre><code>flutter run</code></pre>
 
   <h2>📂 Seed Data</h2>
