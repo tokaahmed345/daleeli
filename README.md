@@ -133,7 +133,7 @@ cd daleeli</code></pre>
   <h2>👩‍💻 Author</h2>
   <p>Toka Ahmed Elsharkawy — Flutter Developer</p>
 
-  <div class="footer-note">Built as part of an 8-day bootcamp project · September 2026</div>
+  <div class="footer-note">Built as part of a bootcamp project · September 2026</div>
 
 </div>
 </body>
